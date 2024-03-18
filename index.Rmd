@@ -1,0 +1,84 @@
+---
+title: "ICESat-2"
+subtitle: "Remote sensing in cryosphere, hydrosphere, and biosphere"
+author: "Wing Ka Ho"
+institute: "The Bartlett Centre for Advanced Spatial Analysis, UCL"
+date: "2024/01/17 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      
+
+---
+```{r echo=FALSE, warning=FALSE}
+#remotes::install_github("ropensci/RefManageR", force = TRUE)
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("Week2_xaringan.bib", check = FALSE)
+library(knitcitations)
+```
+.center[# Facts about ICESat-2 satellite
+]
+
+* Ice, Cloud, and Land Elevation Satellite-2 launched by NASA
+
+* Launched at 15 September 2018
+
+* Currently in services at its "Cycle 22" 
+
+* Previous generation is ICESat which decommissioned from operations on 14 August 2010
+
+
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+
+knitr::include_graphics('pics/icesat2-hqprint(1)_2.jpg')
+```
+
+.center[Source: [Original from Satellie Missions Catalogue -- ICESat-2](https://www.eoportal.org/satellite-missions/icesat-2#references)
+]
+---
+.center[# Missions and visions
+]
+
+* To monitor mass balance in:
+  * Cryosphere -- topography and volume of ice sheets, glaciers, and sea ice
+  
+  * Hydrosphere -- terrestial water body e.g., lake, sub- and supraglacial lake, ocean dynamics e.g., ocean surface height and circulation
+  
+  * Biosphere -- vegetation/ canopy cover (biomass)
+
+* To provide open data source at 3 levels for the NASA National Snow and Ice Data Center Distributed Active Archive Center  `r Citep(myBib,"tc-14-1519-2020")`
+
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_url("https://www.youtube.com/embed/kanl64Yx5VI", height='30%')
+```
+
+---
+.center[# Operations and resolutions 1
+]
+
+
+* Active sensors -- Six-beam Advanced Topographic Laser Altimeter System (ATLAS) on-board
+
+* Measures the returning time of the laser signal to determine the distance between ICESat-2 and ground surface, thus, topography
+
+* ATLAS sends out 10000 pulses per second of laser lights at 532 nanometers and bright green visible spectrum
+
+
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+knitr::include_graphics('pics/asglobalaver.jpg')
+```
+.center[Graphic illustration of the functioning of ICESat-2
+] `r Citep(myBib,"sheridan2018")`
+---
