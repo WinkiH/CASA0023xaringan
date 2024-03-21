@@ -39,12 +39,12 @@ library(knitcitations)
 * Previous generation is ICESat which decommissioned from operations on 14 August 2010
 
 
-```{r echo=FALSE, out.width='50%', fig.align='center'}
+```{r echo=FALSE, out.width='60%', fig.align='center'}
 
 knitr::include_graphics('pics/icesat2-hqprint(1)_2.jpg')
 ```
 
-.center[Source: [Original from Satellie Missions Catalogue -- ICESat-2](https://www.eoportal.org/satellite-missions/icesat-2#references)
+.center[<small> Source:  `r Citep(myBib,"eoportalICESat2IceCloud2013")` </small>
 ]
 ---
 # Missions and visions
@@ -79,15 +79,13 @@ knitr::include_url("https://www.youtube.com/embed/kanl64Yx5VI", height='30%')
 ```{r echo=FALSE, out.width='50%', fig.align='center'}
 knitr::include_graphics('pics/asglobalaver.jpg')
 ```
-.center[Graphic illustration of the functioning of ICESat-2
-] `r Citep(myBib,"sheridan2018")`
+.center[ <small> Graphic illustration of the functioning of ICESat-2 `r Citep(myBib,"sheridan2018")` </small>
+] 
 ---
 # Operations and resolutions 2
 
 
-.panelset[
-
-.panel[.panel-name[Spatial resolutions]
+**Spatial resolutions**
 
 
 * Gridded Antarctic & Arctic Land Ice Height: 100m x 100m
@@ -95,9 +93,9 @@ knitr::include_graphics('pics/asglobalaver.jpg')
 * Gridded Antarctic & Arctic Land Ice Height Change: 40km x 40km
 
 * Monthly Gridded Dynamic Ocean Topography: 25km x25km
-]
 
-.panel[.panel-name[Orbiting]
+
+**Orbiting**
 
 * Spatial reference system: WGS 84 (EPSG:4326)
 
@@ -109,8 +107,7 @@ knitr::include_graphics('pics/asglobalaver.jpg')
 
 * Duration for completing one cycle: 91 days
 
-]
-]
+
 ---
 # Achievements of ICESat-2
 
@@ -130,28 +127,39 @@ knitr::include_graphics('pics/ICESat-2_how-it-works.jpg')
 # Research collections using ICESat-2
 
 
-**Canopy cover**
+**Cryosphere: sea ice**
 
-* The application of ICESat-2 in monitoring changes in biomass especially places with active deforestation and forests that require conservation. `r Citep(myBib,"rs11141721")`
+.pull-left[
+* The application of IceSat-2 is useful in monitoing changes in sea ice extent which is previously hard to quantify due to the remoteness of sea ice.
+
+* This facilitates research and monitoring of sea ice especially under the impact of rapid climate change.
+]
 
 
-```{r echo=FALSE, out.width='80%', fig.align='center'}
-knitr::include_graphics('pics/Brazil.png')
+.pull-right[
+```{r echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics('pics/seaice.jpg')
 ```
-
+<small> `r Citep(myBib,"smithPervasiveIceSheet2020")`. </small>
+]
 
 ---
 # Research collections using ICESat-2
 
-**Cryosphere and hydropshere**
+**Cryosphere and hydropshere: terrestrial ice**
 
 .pull-left[
+
 * Quantifying the changes in mass balance -- gain (accumulation) and loss (ablation) over ice sheets and glaciers in Greenland and Antarctica.  
+
+* Able to facilitate the monitoring of glacier retreats including the hot spot(s) of having rapid retreat (ablation).
+
+* To explore the underlying factors when comparing to other datasets e.g., topography. 
 ]
 
 .pull-right[
 
-```{r echo=FALSE, out.width='60%', fig.align='center'}
+```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics('pics/antarctica.jpeg')
 ```
 <small>`r Citep(myBib,"smithPervasiveIceSheet2020")`<small>
@@ -183,4 +191,10 @@ knitr::include_graphics('pics/antarctica.jpeg')
 knitr::include_graphics('pics/icesat2-logo_0.jpg')
 ```
 ---
+class: center, text-justify
 # References
+
+
+```{r echo=FALSE, warning=FALSE, results='asis'}
+PrintBibliography(myBib, start = 1, end = 6)
+```
