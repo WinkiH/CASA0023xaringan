@@ -114,7 +114,7 @@ knitr::include_graphics('pics/asglobalaver.jpg')
 ---
 # Achievements of ICESat-2
 
-## A pioneer in remote sensing -- six-beam ATLAS
+**A pioneer in remote sensing -- six-beam ATLAS**
 
 
 * NASA's first photon-counting laser altimeter
@@ -130,7 +130,7 @@ knitr::include_graphics('pics/ICESat-2_how-it-works.jpg')
 # Research collections using ICESat-2
 
 
-##Canopy cover 
+**Canopy cover**
 
 * The application of ICESat-2 in monitoring changes in biomass especially places with active deforestation and forests that require conservation. `r Citep(myBib,"rs11141721")`
 
@@ -143,7 +143,7 @@ knitr::include_graphics('pics/Brazil.png')
 ---
 # Research collections using ICESat-2
 
-## Cryosphere and hydropshere
+**Cryosphere and hydropshere**
 
 .pull-left[
 * Quantifying the changes in mass balance -- gain (accumulation) and loss (ablation) over ice sheets and glaciers in Greenland and Antarctica.  
