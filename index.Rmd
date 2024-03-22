@@ -40,7 +40,6 @@ library(knitcitations)
 
 
 ```{r echo=FALSE, out.width='60%', fig.align='center'}
-
 knitr::include_graphics('pics/icesat2-hqprint(1)_2.jpg')
 ```
 
@@ -130,9 +129,11 @@ knitr::include_graphics('pics/ICESat-2_how-it-works.jpg')
 **Cryosphere: sea ice**
 
 .pull-left[
-* The application of IceSat-2 is useful in monitoing changes in sea ice extent which is previously hard to quantify due to the remoteness of sea ice.
+* The application of IceSat-2 is useful in monitoring changes in sea ice extent which is previously hard to quantify due to the remoteness of sea ice.
 
 * This facilitates research and monitoring of sea ice especially under the impact of rapid climate change.
+
+* Does not only quantify the spatial extent but also the thickness which allows monitoring sea ice thinning, and explore the potential impact on local ecosystem `r Citep(myBib,"nsidcWhatSeaIce2024")`. 
 ]
 
 
@@ -154,7 +155,7 @@ knitr::include_graphics('pics/seaice.jpg')
 
 * Able to facilitate the monitoring of glacier retreats including the hot spot(s) of having rapid retreat (ablation).
 
-* To explore the underlying factors when comparing to other datasets e.g., topography. 
+* To explore the underlying factors when comparing to other data sets e.g., topography. 
 ]
 
 .pull-right[
